@@ -1,3 +1,16 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~selectize/dist/css/selectize";
 @import "~selectize/dist/css/selectize.default";
+
+.selectize-input .item {
+  height: 35px;
+  font-size: 15px;
+  padding-top: 7px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.selectize-control.multi .selectize-input [data-value] {
+  background-color: #0779fb;
+  background-image: linear-gradient(to bottom, #0779fb, #0779fb);
+}
