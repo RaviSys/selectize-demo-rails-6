@@ -23,7 +23,7 @@ import "bootstrap";
 require("selectize");
 
 function selectizeDemo() {
-  $('#developer_skills').selectize({
+  $('#developer_skill_list').selectize({
     delimiter: ',',
     persist: false,
     create: function(input) {

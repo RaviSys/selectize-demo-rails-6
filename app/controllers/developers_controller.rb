@@ -64,6 +64,6 @@ class DevelopersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def developer_params
-      params.require(:developer).permit(:name)
+      params.require(:developer).permit(:name, :skill_list)
     end
 end
