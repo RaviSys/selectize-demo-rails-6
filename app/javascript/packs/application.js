@@ -20,3 +20,18 @@ global.$ = jQuery;
 
 import 'css/application';
 import "bootstrap";
+require("selectize");
+
+function selectizeDemo() {
+  $('#developer_skills').selectize({
+    delimiter: ',',
+    persist: false,
+    create: function(input) {
+      return {
+        value: input,
+        text: input
+      }
+    }
+  });
+}
+document.addEventListener("turbolinks:load", function () {selectizeDemo();});
