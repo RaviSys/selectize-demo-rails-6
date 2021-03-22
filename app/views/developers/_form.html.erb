@@ -18,7 +18,11 @@
 
     <div class="field">
     <%= form.label :skills %>
-    <%= form.text_field :skill_list %>
+    <% if form.object.skill_list.present? %>
+      <%= form.text_field :skill_list, value: form.object.skill_list.join(",") %>
+    <% else %>
+      <%= form.text_field :skill_list %>
+    <% end %>
   </div>
 
   <div class="actions">
